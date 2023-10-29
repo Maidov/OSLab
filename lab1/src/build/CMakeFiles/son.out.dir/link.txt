@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/son.out.dir/son.cpp.o CMakeFiles/son.out.dir/WriteRead.cpp.o -o son.out 

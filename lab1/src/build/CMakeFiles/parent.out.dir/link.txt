@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/parent.out.dir/parent.cpp.o CMakeFiles/parent.out.dir/WriteRead.cpp.o -o parent.out 

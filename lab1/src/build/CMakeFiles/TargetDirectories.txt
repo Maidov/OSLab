@@ -1,0 +1,4 @@
+/home/master/Desktop/labs-os/src/build/CMakeFiles/son.out.dir
+/home/master/Desktop/labs-os/src/build/CMakeFiles/parent.out.dir
+/home/master/Desktop/labs-os/src/build/CMakeFiles/edit_cache.dir
+/home/master/Desktop/labs-os/src/build/CMakeFiles/rebuild_cache.dir
