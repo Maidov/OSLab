@@ -1,10 +1,8 @@
+#pragma once
 #include <vector>
+#include "point.h"
 
-struct Point {
-    double x, y, z;
-};
-
-std::vector<Point> P100 = {{-8, 54, 38}, 
+const std::vector<Point> P100 = {{-8, 54, 38}, 
 {56, 26, -5}, 
 {13, 25, -34}, 
 {6, 18, 65}, 
@@ -107,7 +105,7 @@ std::vector<Point> P100 = {{-8, 54, 38},
 };
 
 
-std::vector<Point> P200 = {{43, 73, -54}, 
+const std::vector<Point> P200 = {{43, 73, -54}, 
 {-71, -24, 87}, 
 {1, -7, -24}, 
 {-83, 40, -58}, 
@@ -309,7 +307,7 @@ std::vector<Point> P200 = {{43, 73, -54},
 {-30, -58, -24}, 
 };
 
-std::vector<Point> P300 = {{-66, 58, -88}, 
+const std::vector<Point> P300 = {{-66, 58, -88}, 
 {-27, 36, 34}, 
 {-26, -79, 37}, 
 {79, 58, 96}, 
@@ -611,7 +609,7 @@ std::vector<Point> P300 = {{-66, 58, -88},
 {57, -63, -26}, 
 };
 
-std::vector<Point> P400 = {{-33, -45, -68}, 
+const std::vector<Point> P400 = {{-33, -45, -68}, 
 {-12, 66, 23}, 
 {72, -66, -98}, 
 {90, 68, 64}, 
