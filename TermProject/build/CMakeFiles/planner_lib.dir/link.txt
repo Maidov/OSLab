@@ -1,0 +1,2 @@
+/usr/bin/ar qc libplanner_lib.a CMakeFiles/planner_lib.dir/src/jobs.cpp.o CMakeFiles/planner_lib.dir/src/jobs_validator.cpp.o CMakeFiles/planner_lib.dir/src/main.cpp.o
+/usr/bin/ranlib libplanner_lib.a
