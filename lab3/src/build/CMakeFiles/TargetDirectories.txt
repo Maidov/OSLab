@@ -1,0 +1,3 @@
+/home/heavenmaido/Desktop/OSLab/lab3/src/build/CMakeFiles/main.dir
+/home/heavenmaido/Desktop/OSLab/lab3/src/build/CMakeFiles/edit_cache.dir
+/home/heavenmaido/Desktop/OSLab/lab3/src/build/CMakeFiles/rebuild_cache.dir

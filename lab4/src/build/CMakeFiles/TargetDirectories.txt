@@ -1,0 +1,10 @@
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/first.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/second.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/test_dynamic.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/test_static.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/edit_cache.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/rebuild_cache.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/list_install_components.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/install.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/install/local.dir
+/home/heavenmaido/Desktop/OSLab/lab4/src/build/CMakeFiles/install/strip.dir

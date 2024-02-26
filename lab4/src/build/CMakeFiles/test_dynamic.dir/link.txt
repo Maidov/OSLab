@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_dynamic.dir/test_dynamic.c.o -o test_dynamic  -ldl 

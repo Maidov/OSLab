@@ -1,24 +1,28 @@
 #include "first.h"
 
-int isPrime(int x) {
-    for (int i = 2; i * i <= x; ++i)
-    {
-        if (x % i == 0)
-        {
-            return 0;
+int is_prime(int num) {
+    if (num < 2) {
+        return 0; // Не простое число
+    }
+
+    for (int i = 2; i < num; i++) {
+        if (num % i == 0) {
+            return 0; // Не простое число
         }
     }
-    return 1;
+
+    return 1; // Простое число
 }
 
-int PrimeCount(int a, int b)
-{
+int PrimeCount(int start, int end) {
+    if (start < 0 || end < 0) {
+        fprintf(stderr, "Wrong input\n");
+        exit(EXIT_FAILURE);
+    }
     int count = 0;
-    for (int i = a; i <= b; ++i)
-    {
-        if (isPrime(i) == 1)
-        {
-            ++count;
+    for (int num = start; num <= end; num++) {
+        if (is_prime(num)) {
+            count++;
         }
     }
     return count;

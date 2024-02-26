@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libsecond.so -o libsecond.so CMakeFiles/second.dir/second.c.o  -lm 

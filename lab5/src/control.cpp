@@ -98,64 +98,7 @@ int main() {
 			}
 			
 		} else if (s == "exec") {
-			// int id, value;
-			// std::string name, res;
 
-			// std::string line;
-			// std::getline(std::cin >> std::ws, line);  // Считываем оставшуюся часть строки
-
-			// std::istringstream iss(line);
-			// std::vector<std::string> arguments;
-			// std::string arg;
-
-
-			// while (iss >> arg) {
-			// 	arguments.push_back(arg);
-			// }
-			
-			// if (arguments.size() == 3) {
-			// 	// exec a b c
-			// 	std::cout << "3" << std::endl;
-			// 	std::optional<int> try_id = convertStringToInt(arguments[0]);
-			// 	std::optional<int> try_val = convertStringToInt(arguments[2]);
-			// 	if (try_id.has_value()){
-			// 		id = try_id.value();
-			// 		if (try_val.has_value()){
-			// 			value = try_val.value();
-			// 		} else {
-			// 			std::cout << "OK: Invalid value" << std::endl;
-			// 		}
-			// 	} else {
-			// 		std::cout << "OK: Invalid id" << std::endl;
-			// 	}
-
-			// 	int ind = control_node.find(id);
-			// 	if (ind != -1) {
-			// 		// Save key - value
-			// 	} else {
-			// 		std::cout << "Error: Not found" << std::endl;
-			// 	}
-
-			// } else if (arguments.size() == 2) {
-			// 	// exec a b
-			// 	std::cout << "2" << std::endl;
-			// 	std::optional<int> try_id = convertStringToInt(arguments[0]);
-			// 	if (try_id.has_value()){
-			// 		id = try_id.value();
-			// 	} else {
-			// 		std::cout << "OK: Invalid id" << std::endl;
-			// 	}
-
-			// 	int ind = control_node.find(id);
-			// 	if (ind != -1) {
-			// 		// get key - value
-			// 	} else {
-			// 		std::cout << "Error: Not found" << std::endl;
-			// 	}
-
-			// } else {
-			// 	std::cout << "OK: Invalid number of arguments" << std::endl;
-			// }
 
 
 			std::string key, value, res;

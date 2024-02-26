@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef int (*PrimeCount)(float A, float B);
+typedef int (*PrimeCount)(int A, int B);
 typedef char* (*Translation)(long x);
 
 int main() {
@@ -48,7 +48,7 @@ int main() {
             int A, B;
             scanf("%d %d", &A, &B);
             int result = primecount(A, B);
-            printf("PrimeCount in A: %d\n", result);
+            printf("PrimeCount from A to B: %d\n", result);
         } else if (choice == 2) {
             traslation = (Translation)dlsym(libHandle, "Translation");
             if (!traslation) {

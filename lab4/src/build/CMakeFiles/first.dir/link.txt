@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libfirst.so -o libfirst.so CMakeFiles/first.dir/first.c.o  -lm 
