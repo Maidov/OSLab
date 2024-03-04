@@ -72,20 +72,22 @@ int main() {
 
     FILE *file = fopen(filePath.c_str(), "a");
 
-    int fd_input = shm_open("input", O_CREAT | O_RDWR, 0666);
+    int fd_input = shm_open("input", O_CREAT | O_RDWR, 0666); // create if not exist, read/write
 
     if (fd_input == -1) {
         shm_unlink("input");
         perror("shm_open");
     }
 
-    if (ftruncate(fd_input, SHARED_MEMORY_SIZE) == -1) {
+    if (ftruncate(fd_input, SHARED_MEMORY_SIZE) == -1) { // установили размер (и проверили)
         shm_unlink("input");
         perror("ftruncate");
     }
-
+    // создали ощий для процессов сегмент памяти
     char * shared_input = (char *) mmap(NULL, SHARED_MEMORY_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd_input, 0);
-
+    //                                  ^ сам выбирает адрес начала                        ^ общее между процессами  
+    //                                             ^ размер области                                    ^ файловый дескриптор    
+    //                                                              ^ чтение запись                              ^  смещение в файле разделяемого сегмента памяти.
     if (shared_input == MAP_FAILED) {
         munmap(shared_input, SHARED_MEMORY_SIZE);
         shm_unlink("input");
@@ -113,7 +115,7 @@ int main() {
     char * shared_error = (char *) mmap(NULL, SHARED_MEMORY_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd_error, 0);
 
     if (shared_error == MAP_FAILED) {
-        munmap(shared_error, SHARED_MEMORY_SIZE);
+        munmap(shared_error, SHARED_MEMORY_SIZE); // отменяем общую область
         shm_unlink("error");
         munmap(shared_input, SHARED_MEMORY_SIZE);
         shm_unlink("input");
@@ -148,3 +150,4 @@ int main() {
     munmap(shared_input, SHARED_MEMORY_SIZE);
     shm_unlink("input");
 }
+
