@@ -11,16 +11,6 @@ using graph = vector<vector<IJob*> >;
 
 const string CONFIG = "config.yaml";
 
-// enum Functions {
-//     null,
-//     _GCD,
-//     _FibNumberRemainderCount,
-//     _HanoiTower,
-//     _Sum, 
-//     _DumbFib,
-//     _Void
-// };
-
 IJob* function_identifier(string fnc) {
     if(fnc == "GCD") {
         return new GCDJob;
@@ -67,14 +57,13 @@ auto main(int argc, char** argv) -> int {
         tmp_graph.push_back(cur_vertices);
 
         cout << "Job: " << job["Job"].as<string>() << endl;
-        IJob* current_job = function_identifier(job["Job"].as<string>());
+        IJob* current_job = function_identifier(job["Job"].as<string>()); // Set job function by its name
         if(!current_job) {
             cout << "Wrong job function name!" << endl;
             exit(-1);
         }
         current_job->id = _id - 1;
         Jobs.push_back(current_job);
-
     }
 
     for(size_t i = 0; i < tmp_graph.size(); ++i) {
@@ -83,7 +72,7 @@ auto main(int argc, char** argv) -> int {
         }
     }
 
-    for (size_t i = 0; i < Jobs.size(); ++i) {
+    for (size_t i = 0; i < Jobs.size(); ++i) { // Set links to jobs
         if(tmp_graph[i].size() < 1) {
             continue;
         }

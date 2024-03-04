@@ -4,8 +4,8 @@
 using namespace std;
 using ll = int64_t;
 
-ll GCD(ll a, ll b);
-ll FibNumberRemainderCount(ll n);
+ll GCD(ll a, ll b); // Наибольший общий делитель.
+ll FibNumberRemainderCount(ll n); // 
 void HanoiTowers(int n, char from_rod, char to_rod, char aux_rod);
 ll Sum(ll a, ll b);
 ll DumbFib(ll n);
